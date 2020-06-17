@@ -15,8 +15,12 @@ jobs:
     - arch: arm64
     - arch: ppc64le
 
-addons:
-  apt: make wget git gcc python3
+before_install:
+  - sudo apt-get update
+  - sudo apt-get -y install make wget git gcc python3
+ 
+#addons:
+#  apt: make wget git gcc python3
 
 go:
 - 1.14.2
