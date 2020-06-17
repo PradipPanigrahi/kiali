@@ -15,6 +15,9 @@ jobs:
     - arch: arm64
     - arch: ppc64le
 
+addons:
+  apt: make wget git gcc python3
+
 go:
 - 1.14.2
 
