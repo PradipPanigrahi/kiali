@@ -16,7 +16,7 @@ jobs:
     - arch: ppc64le
 
 before_install:
-  - sudo apt-get update
+  #- sudo apt-get update
   - sudo apt-get -y install make wget git gcc python3
  
 #addons:
