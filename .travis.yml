@@ -18,6 +18,8 @@ jobs:
 before_install:
   #- sudo apt-get update
   - sudo apt-get -y install make wget git gcc python3
+  - sudo apt-get -y install make swagger-install
+  - sudo apt-get -y install make lint-install
  
 #addons:
 #  apt: make wget git gcc python3
