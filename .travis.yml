@@ -23,7 +23,7 @@ before_install:
 #  apt: make wget git gcc python3
 
 go:
-- 1.14.2
+- 1.14.4
 
 # The channel name "chat.freenode.net#kiali" is encrypted to prevent IRC spam from forks
 notifications:
