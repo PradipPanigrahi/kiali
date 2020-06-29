@@ -49,7 +49,7 @@ before_script:
   - export KIALI_SRC="$GOPATH/src/github.com/kiali/kiali"
   - sudo mkdir -p $KIALI_SRC
   - sudo git clone https://github.com/kiali/kiali.git $KIALI_SRC
-  #- cd $KIALI_SRC
+  - cd $KIALI_SRC
 
 env:
   global:
@@ -68,5 +68,6 @@ install:
 script:
   - if [ ! -z "$(gofmt -l ${GO_FILES})" ]; then echo "These files need to be formatted:" "$(gofmt -l ${GO_FILES})";echo "Diff files:"; gofmt -d ${GO_FILES}; exit 1; fi # Gofmt Linter
   - make lint
+  - cd ..
   - make swagger-travis
   - make clean build test-race
