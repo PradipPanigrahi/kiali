@@ -39,7 +39,11 @@ notifications:
     on_failure: change
 
 before_script:
-  - GO_FILES=$(find . -iname '*.go' -type f | grep -l /vendor/) # All the .go files, excluding vendor/
+  - GO_FILES=$(find . -iname '*.go' -type f | grep -v /vendor/) # All the .go files, excluding vendor/
+  - export KIALI_SRC="$GOPATH/src/github.com/kiali/kiali"
+  - sudo mkdir -p $KIALI_SRC
+  - sudo git clone https://github.com/kiali/kiali.git $KIALI_SRC
+  - cd $KIALI_SRC
 
 env:
   global:
