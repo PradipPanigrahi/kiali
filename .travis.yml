@@ -40,6 +40,11 @@ notifications:
 
 before_script:
   - GO_FILES=$(find . -iname '*.go' -type f | grep -v /vendor/) # All the .go files, excluding vendor/
+  - export SWAGGER_SRC="$GOPATH/src/github.com/go-swagger/go-swagger"
+  - sudo mkdir -p $SWAGGER_SRC
+  - sudo git clone -b v0.19.0 https://github.com/go-swagger/go-swagger.git $SWAGGER_SRC
+  - cd $SWAGGER_SRC
+  - sudo go install ./cmd/swagger
   - export KIALI_SRC="$GOPATH/src/github.com/kiali/kiali"
   - sudo mkdir -p $KIALI_SRC
   - sudo git clone https://github.com/kiali/kiali.git $KIALI_SRC
