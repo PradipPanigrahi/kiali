@@ -3,14 +3,14 @@ package main
 import (
 	jaegerModels "github.com/jaegertracing/jaeger/model/json"
 
-	"github.com/PradipPanigrahi/kiali/k-charted/model"
-	"github.com/PradipPanigrahi/kiali/kiali/business"
-	"github.com/PradipPanigrahi/kiali/kiali/graph/config/cytoscape"
-	"github.com/PradipPanigrahi/kiali/kiali/handlers"
-	"github.com/PradipPanigrahi/kiali/kiali/jaeger"
-	"github.com/PradipPanigrahi/kiali/kiali/models"
-	"github.com/PradipPanigrahi/kiali/kiali/prometheus"
-	"github.com/PradipPanigrahi/kiali/kiali/status"
+	"/home/travis/.gimme/versions/go1.14.4.linux.amd64/src/github.com/PradipPanigrahi/kiali/k-charted/model"
+	"/home/travis/.gimme/versions/go1.14.4.linux.amd64/src/github.com/PradipPanigrahi/kiali/kiali/business"
+	"/home/travis/.gimme/versions/go1.14.4.linux.amd64/src/github.com/PradipPanigrahi/kiali/kiali/graph/config/cytoscape"
+	"/home/travis/.gimme/versions/go1.14.4.linux.amd64/src/github.com/PradipPanigrahi/kiali/kiali/handlers"
+	"/home/travis/.gimme/versions/go1.14.4.linux.amd64/src/github.com/PradipPanigrahi/kiali/kiali/jaeger"
+	"/home/travis/.gimme/versions/go1.14.4.linux.amd64/src/github.com/PradipPanigrahi/kiali/kiali/models"
+	"/home/travis/.gimme/versions/go1.14.4.linux.amd64/src/github.com/PradipPanigrahi/kiali/kiali/prometheus"
+	"/home/travis/.gimme/versions/go1.14.4.linux.amd64/src/github.com/PradipPanigrahi/kiali/kiali/status"
 )
 
 /////////////////////
