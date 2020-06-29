@@ -3,10 +3,10 @@ package main
 import (
 	jaegerModels "github.com/jaegertracing/jaeger/model/json"
 
-	"github.com/kiali/k-charted/model"
-	"github.com/kiali/kiali/business"
-	"github.com/kiali/kiali/graph/config/cytoscape"
-	"github.com/kiali/kiali/handlers"
+	"/home/travis/.gimme/versions/go1.14.4.linux.amd64/src/github.com/kiali/k-charted/model"
+	"/home/travis/.gimme/versions/go1.14.4.linux.amd64/src/github.com/kiali/kiali/business"
+	"/home/travis/.gimme/versions/go1.14.4.linux.amd64/src/github.com/kiali/kiali/graph/config/cytoscape"
+	"/home/travis/.gimme/versions/go1.14.4.linux.amd64/src/github.com/kiali/kiali/handlers"
 	"github.com/kiali/kiali/jaeger"
 	"github.com/kiali/kiali/models"
 	"github.com/kiali/kiali/prometheus"
