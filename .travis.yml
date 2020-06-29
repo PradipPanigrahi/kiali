@@ -2,7 +2,7 @@ language: go
 go_import_path: 
 
 before_script:
-  - export KIALI_SRC="$GOPATH/src/github.com/kiali/kiali"
+  - export KIALI_SRC="$GOPATH/src/github.com/PradipPanigrahi/kiali/kiali"
   
 arch:
   - amd64
