@@ -48,7 +48,8 @@ before_script:
   - sudo mkdir -p $SWAGGER_SRC
   - sudo git clone -b v0.19.0 https://github.com/go-swagger/go-swagger.git $SWAGGER_SRC
   - cd $SWAGGER_SRC
-  - sudo go install ./cmd/swagger
+  - go install ./cmd/swagger
+  - cd ../
   - export KIALI_SRC="$GOPATH/src/github.com/PradipPanigrahi/kiali/kiali"
   - sudo mkdir -p $KIALI_SRC
   - sudo git clone https://github.com/kiali/kiali.git $KIALI_SRC
