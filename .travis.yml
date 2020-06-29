@@ -1,5 +1,8 @@
 language: go
 go_import_path: 
+
+before_script:
+  - export KIALI_SRC="$GOPATH/src/github.com/kiali/kiali"
 arch:
   - amd64
   - arm64
