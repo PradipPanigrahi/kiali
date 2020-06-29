@@ -3,14 +3,14 @@ package main
 import (
 	jaegerModels "github.com/jaegertracing/jaeger/model/json"
 
-	"github.com/kiali/k-charted/model"
-	"github.com/kiali/kiali/business"
-	"github.com/kiali/kiali/graph/config/cytoscape"
-	"github.com/kiali/kiali/handlers"
-	"github.com/kiali/kiali/jaeger"
-	"github.com/kiali/kiali/models"
-	"github.com/kiali/kiali/prometheus"
-	"github.com/kiali/kiali/status"
+	"github.com/PradipPanigrahi/kiali/k-charted/model"
+	"github.com/PradipPanigrahi/kiali/kiali/business"
+	"github.com/PradipPanigrahi/kiali/kiali/graph/config/cytoscape"
+	"github.com/PradipPanigrahi/kiali/kiali/handlers"
+	"github.com/PradipPanigrahi/kiali/kiali/jaeger"
+	"github.com/PradipPanigrahi/kiali/kiali/models"
+	"github.com/PradipPanigrahi/kiali/kiali/prometheus"
+	"github.com/PradipPanigrahi/kiali/kiali/status"
 )
 
 /////////////////////
