@@ -24,6 +24,9 @@ before_install:
   - sudo apt-get -y install make wget git gcc python3
   #- sudo apt-get -y install make swagger-install
   #- sudo apt-get -y install make lint-install
+  - export PATH="$PATH:/usr/local/go/bin"
+  - export GOPATH="$HOME/go"
+  - export PATH=$GOPATH/bin:$PATH
  
 #addons:
 #  apt: make wget git gcc python3
@@ -43,10 +46,10 @@ before_script:
   - GO_FILES=$(find . -iname '*.go' -type f | grep -v /vendor/) # All the .go files, excluding vendor/
   - export SWAGGER_SRC="$GOPATH/src/github.com/go-swagger/go-swagger"
   - sudo mkdir -p $SWAGGER_SRC
-  - sudo git clone -b v0.19.0 https://github.com/go-swagger/go-swagger.git $SWAGGER_SRC
-  #- cd $SWAGGER_SRC
-  #- sudo go install ./cmd/swagger
-  - export KIALI_SRC="$GOPATH/src/github.com/kiali/kiali"
+  - sudo git clone -b v0.19.0 https://github.com/PradipPanigrahi/go-swagger/go-swagger.git $SWAGGER_SRC
+  - cd $SWAGGER_SRC
+  - sudo go install ./cmd/swagger
+  - export KIALI_SRC="$GOPATH/src/github.com/PradipPanigrahi/kiali/kiali"
   - sudo mkdir -p $KIALI_SRC
   - sudo git clone https://github.com/kiali/kiali.git $KIALI_SRC
   - cd $KIALI_SRC
