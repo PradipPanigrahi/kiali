@@ -44,7 +44,7 @@ before_script:
   - sudo mkdir -p $SWAGGER_SRC
   - sudo git clone -b v0.19.0 https://github.com/go-swagger/go-swagger.git $SWAGGER_SRC
   - cd $SWAGGER_SRC
-  - sudo go install ./cmd/swagger
+  #- sudo go install ./cmd/swagger
   - export KIALI_SRC="$GOPATH/src/github.com/kiali/kiali"
   - sudo mkdir -p $KIALI_SRC
   - sudo git clone https://github.com/kiali/kiali.git $KIALI_SRC
@@ -63,6 +63,7 @@ env:
 install:
  - make swagger-install
  - make lint-install
+ - sudo go install ./cmd/swagger
 
 script:
   - if [ ! -z "$(gofmt -l ${GO_FILES})" ]; then echo "These files need to be formatted:" "$(gofmt -l ${GO_FILES})";echo "Diff files:"; gofmt -d ${GO_FILES}; exit 1; fi # Gofmt Linter
