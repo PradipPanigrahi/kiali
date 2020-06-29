@@ -28,8 +28,8 @@ import (
 
 	"github.com/golang/glog"
 
-	"github.com/kiali/kiali/config"
-	"github.com/kiali/kiali/config/security"
+	"github.com//PradipPanigrahikiali/kiali/config"
+	"github.com//PradipPanigrahikiali/kiali/config/security"
 	"github.com/kiali/kiali/log"
 	"github.com/kiali/kiali/prometheus/internalmetrics"
 	"github.com/kiali/kiali/server"
