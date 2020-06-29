@@ -2,7 +2,7 @@ language: go
 go_import_path: 
 
 before_script:
-  - export KIALI_SRC="$GOPATH/src/github.com/PradipPanigrahi"
+  - export KIALI_SRC="$GOPATH/src/github.com/PradipPanigrahi/kiali/"
   
 arch:
   - amd64
@@ -50,7 +50,7 @@ before_script:
   - cd $SWAGGER_SRC
   - go install ./cmd/swagger
   - cd ../
-  - export KIALI_SRC="$GOPATH/src/github.com/PradipPanigrahi"
+  - export KIALI_SRC="$GOPATH/src/github.com/PradipPanigrahi/kiali"
   - sudo mkdir -p $KIALI_SRC
   - sudo git clone https://github.com/kiali/kiali/kiali.git $KIALI_SRC/
   - cp $KIALI_SRC/kiali/Makefile .
