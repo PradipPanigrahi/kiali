@@ -60,7 +60,7 @@ GOARCH ?= $(shell go env GOARCH)
 GO_BUILD_ENVVARS = \
 	GOOS=$(GOOS) \
 	GOARCH=$(GOARCH) \
-	CGO_ENABLED=0 \
+	CGO_ENABLED=1 \
 
 # Environment variables to shift between base images.
 ifeq ($(GOARCH),amd64)
