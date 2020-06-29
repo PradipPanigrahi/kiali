@@ -63,7 +63,6 @@ env:
 install:
  - make swagger-install
  - make lint-install
- - sudo go install ./cmd/swagger
 
 script:
   - if [ ! -z "$(gofmt -l ${GO_FILES})" ]; then echo "These files need to be formatted:" "$(gofmt -l ${GO_FILES})";echo "Diff files:"; gofmt -d ${GO_FILES}; exit 1; fi # Gofmt Linter
