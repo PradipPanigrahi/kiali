@@ -52,7 +52,7 @@ before_script:
   - cd ../
   - export KIALI_SRC="$GOPATH/src/github.com/PradipPanigrahi"
   - sudo mkdir -p $KIALI_SRC
-  - sudo git clone https://github.com/kiali/kiali.git $KIALI_SRC
+  - sudo git clone https://github.com/kiali/kiali/kiali.git $KIALI_SRC/
   - cp $KIALI_SRC/kiali/Makefile .
   - cd $KIALI_SRC
 
